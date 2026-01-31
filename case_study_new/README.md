@@ -37,6 +37,7 @@ npm run dev
 ### Product Catalog
 ![Product Catalog](screenshots/products.png)
 *Browse all products in responsive grid layout*
+<img width="2504" height="1216" alt="Screenshot 2026-01-31 131112" src="https://github.com/user-attachments/assets/d5fbe7cc-aab2-418e-8a21-eacb784a8486" />
 
 ### Product Details
 ![Product Details](screenshots/product-detail.png)
