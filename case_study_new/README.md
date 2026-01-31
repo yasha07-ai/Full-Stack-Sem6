@@ -31,31 +31,23 @@ npm run dev
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/Screenshot 2026-01-30 160657.png)
 *Interactive home with search and featured products*
 <img width="2533" height="1213" alt="Screenshot 2026-01-31 131215" src="https://github.com/user-attachments/assets/aeb0df36-7dac-450e-9bf8-4dbf4e649cc0" />
 
 
 ### Product Catalog
-![Product Catalog](screenshots/products.png)
 *Browse all products in responsive grid layout*
 <img width="2504" height="1216" alt="Screenshot 2026-01-31 131112" src="https://github.com/user-attachments/assets/d5fbe7cc-aab2-418e-8a21-eacb784a8486" />
 
-
-### Product Details
-![Product Details](screenshots/product-detail.png)
-*Detailed product information page*
-
 ### Shopping Cart
-![Shopping Cart](screenshots/cart.png)
 *Cart with quantity controls and real-time totals*
+<img width="2477" height="1209" alt="Screenshot 2026-01-31 131413" src="https://github.com/user-attachments/assets/da40c135-20af-420f-a5c6-1670aeb7a58b" />
 
 ### Checkout
-![Checkout](screenshots/checkout.png)
 *Order form and confirmation flow*
+<img width="2511" height="1231" alt="Screenshot 2026-01-31 131459" src="https://github.com/user-attachments/assets/b3440271-c05e-46eb-8d8d-7075d4402181" />
 
 ---
-
 ## Features
 
 ✅ **Interactive Home** — Search & featured products  
