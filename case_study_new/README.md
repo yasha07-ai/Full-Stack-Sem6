@@ -33,11 +33,14 @@ npm run dev
 ### Home Page
 ![Home Page](screenshots/Screenshot 2026-01-30 160657.png)
 *Interactive home with search and featured products*
+<img width="2533" height="1213" alt="Screenshot 2026-01-31 131215" src="https://github.com/user-attachments/assets/aeb0df36-7dac-450e-9bf8-4dbf4e649cc0" />
+
 
 ### Product Catalog
 ![Product Catalog](screenshots/products.png)
 *Browse all products in responsive grid layout*
 <img width="2504" height="1216" alt="Screenshot 2026-01-31 131112" src="https://github.com/user-attachments/assets/d5fbe7cc-aab2-418e-8a21-eacb784a8486" />
+
 
 ### Product Details
 ![Product Details](screenshots/product-detail.png)
