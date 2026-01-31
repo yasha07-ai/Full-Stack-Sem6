@@ -50,25 +50,3 @@
 - Performance optimizations (lazy loading, code splitting)
 
 ![alt text](image-3.png)
-
-
-### ** CASE STUDY**
-
-### ** lostfound: Digital Lost & Found Portal**
-
-**Purpose:** Full-featured, production-ready application  
-**Tech Stack:** React 19, Vite, React Router DOM, Custom CSS, LocalStorage  
-
-**Key Features:**
--  **Home Dashboard** - Overview with statistics
--  **Item Reporting** - Report lost/found items with categories
--  **Item Browsing** - Search, filter by status and category
--  **Claim Management** - Submit claims with verification
--  **Admin Dashboard** - Metrics and operational overview
--  **LocalStorage Persistence** - All data synced locally
--  **Responsive Design** - Works on all devices
--  **Warm, Soft UI** - Professional color scheme with purple/coral accents
-
-![alt text](image-4.png)
-
-![alt text](image-5.png)
