@@ -13,3 +13,7 @@ For each React app, install dependencies and run the dev server:
 
 - `npm install`
 - `npm run dev`
+
+## Status
+
+✅ Pushed to GitHub: https://github.com/yasha07-ai/Full-Stack-Sem6
