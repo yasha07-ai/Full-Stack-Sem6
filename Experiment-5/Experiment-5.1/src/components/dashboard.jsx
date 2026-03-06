@@ -23,7 +23,9 @@ export default function Dashboard() {
     { month: 'Mar', sales: 2000 },
     { month: 'Apr', sales: 2780 },
     { month: 'May', sales: 1890 },
-    { month: 'Jun', sales: 2390 }
+    { month: 'Jun', sales: 2390 },
+    { month: 'Jul', sales: 3200 },
+    { month: 'Aug', sales: 2800 }
   ]);
 
   return (

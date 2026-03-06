@@ -1,18 +1,49 @@
-# React + Vite
+# Experiment 5.1: Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Author
+Yasha Tasaneem
 
-Currently, two official plugins are available:
+## Aim
+To create a responsive analytics dashboard that displays key metrics, sales trends, and recent user activity in a visually appealing interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Stats Cards**: Display key metrics (Total Users, Active Users, Total Sales, Conversion Rate)
+- **Sales Trend Chart**: Bar chart showing sales data across 8 months (Jan-Aug)
+- **Recent Activity**: List of recent user activities with timestamps
+- **Responsive Design**: Dashboard fits the entire screen without blank spaces
+- **Modern UI**: Gradient background, smooth animations, and hover effects
+- **Lazy Loading**: Dashboard component is lazy loaded for better performance
 
-## React Compiler
+## Dashboard Components
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Stats Container
+- 4 stat cards displaying important metrics
+- Each card shows an icon, metric name, value, and change percentage
+- Hover effects with smooth animations
 
-Note: This will impact Vite dev & build performances.
+### Sales Trend Section
+- Bar chart visualization of monthly sales data
+- Interactive bars with hover effects
+- Legend showing sales in dollars
 
-## Expanding the ESLint configuration
+### Recent Activity Section
+- List of recent user activities
+- Shows user name, action performed, and timestamp
+- Scrollable list for multiple activities
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+- React with Hooks (useState)
+- CSS3 with Flexbox and Grid
+- Lazy loading with React.lazy and Suspense
+- Gradient backgrounds and animations
+
+## Styling Highlights
+- Professional blue gradient background (#1e3c72 to #2a5298)
+- Rounded corners (16px) for modern look
+- Box shadows for depth
+- Smooth transitions and hover animations
+- Responsive grid layout
+
+![alt text](image.png)
+
+![alt text](image-1.png)
