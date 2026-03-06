@@ -1,18 +1,65 @@
-# React + Vite
+# Experiment 5.2: Multi-Page Website with Client-Side Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Author
+Yasha Tasaneem
 
-Currently, two official plugins are available:
+## Aim
+To create a multi-page website using React Router for client-side routing without page reloads.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Client-Side Routing**: Fast navigation between pages without server requests
+- **Lazy Loading**: Components are lazy loaded for better performance
+- **Home Page**: Welcome page with introduction to the SPA
+- **About Page**: Information about client-side routing and React Router benefits
+- **Services Page**: List of services with descriptions (Web Development, UI/UX Design, Backend Development, Mobile App Development)
+- **Contact Page**: Contact form with name, email, and message fields
+- **Navigation Menu**: Easy navigation between all pages
+- **Form Handling**: Contact form with validation and success message
+- **Responsive Design**: Works seamlessly on all devices
 
-## React Compiler
+## Pages Included
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Home
+- Landing page introducing the SPA
+- Explains client-side routing benefits
 
-Note: This will impact Vite dev & build performances.
+### About
+- Details about React Router implementation
+- Explains BrowserRouter, Routes, and Route components
+- Benefits of client-side routing
 
-## Expanding the ESLint configuration
+### Services
+- Displays 4 services with descriptions:
+  - Web Development
+  - UI/UX Design
+  - Backend Development
+  - Mobile App Development
+- Styled service cards with left border accent
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Contact
+- Contact form with fields: Name, Email, Message
+- Form validation
+- Success message on submission
+- Auto-reset after 2 seconds
+
+## Technologies Used
+- React with Hooks (useState)
+- React Router DOM for routing
+- CSS3 for styling
+- Vite as build tool
+
+## Project Structure
+```
+src/
+├── components/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Services.jsx
+│   └── Contact.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+![alt text](image.png)
+
+![alt text](image-1.png)
