@@ -1,26 +1,26 @@
-# Experiment 6.2: Client-Side Form Validation
+# Experiment 6.2: Login Form with Email and Password Validation
+
+## Author
+Yasha Tasaneem
 
 ## Aim
-To validate form inputs on the client side before submission.
+To create a login form with client-side validation for email and password fields.
 
 ## Theory
-Client-side validation checks user input and provides immediate feedback without server interaction. This improves user experience.
+Client-side validation checks user input and provides immediate feedback without server interaction. This improves user experience and reduces server load.
 
 ## Features
+- Email input field with validation
+- Password input field with validation
 - Form validation before submission
-- Error messages for invalid input
-- Submit button enabled only when form is valid
+- Alert popup displaying submitted credentials
 - Form reset functionality
 - Clean and simple UI
 
 ## Validation Rules
-- **Name**: Min 3 characters
-- **Email**: Valid email format
-- **Password**: Min 6 characters
-- **Age**: Must be 18 or older
+- **Email**: Required, must be valid email format
+- **Password**: Required, minimum 6 characters
 
 ![alt text](image.png)
 
 ![alt text](image-1.png)
-
-![alt text](image-2.png)
