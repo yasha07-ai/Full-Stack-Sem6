@@ -33,3 +33,7 @@ Upon successful validation, all form data is displayed in an alert popup with th
 - State
 
 The form automatically resets after submission.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
