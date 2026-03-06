@@ -1,5 +1,8 @@
 # Experiment 6.1: User Registration Form
 
+## Author
+Yasha Tasaneem
+
 ## Aim
 To create a comprehensive user registration form with client-side validation and alert-based submission.
 
@@ -34,6 +37,6 @@ Upon successful validation, all form data is displayed in an alert popup with th
 
 The form automatically resets after submission.
 
-![alt text](image.png)
+![alt text](image-2.png)
 
 ![alt text](image-1.png)
