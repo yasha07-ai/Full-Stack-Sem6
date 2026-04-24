@@ -1,0 +1,184 @@
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(26, 31, 58, 0.95) 100%);
+  border: 2px solid #00ff41;
+  box-shadow: 
+    0 0 30px rgba(0, 255, 65, 0.3),
+    inset 0 0 30px rgba(0, 255, 65, 0.05);
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.username {
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 2px solid #00d9ff;
+  background: rgba(0, 217, 255, 0.05);
+  color: #00d9ff;
+  text-shadow: 0 0 5px #00d9ff;
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3), inset 0 0 10px rgba(0, 217, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.username:focus {
+  outline: none;
+  border-color: #00ff41;
+  color: #00ff41;
+  text-shadow: 0 0 5px #00ff41;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4), inset 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+.username::placeholder {
+  color: rgba(0, 217, 255, 0.5);
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(10, 14, 39, 0.5);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  border-radius: 2px;
+  scrollbar-width: thin;
+  scrollbar-color: #00ff41 transparent;
+}
+
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: #00ff41;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  border-radius: 4px;
+}
+
+.message {
+  padding: 10px 12px;
+  background: rgba(0, 217, 255, 0.08);
+  border-left: 3px solid #00d9ff;
+  border-radius: 2px;
+  color: #00d9ff;
+  font-size: 13px;
+  line-height: 1.5;
+  word-break: break-word;
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
+  animation: messageSlide 0.3s ease-out;
+}
+
+.message b {
+  color: #ff006e;
+  text-shadow: 0 0 5px #ff006e;
+  font-weight: 700;
+}
+
+@keyframes messageSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(10, 14, 39, 0.5);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  border-radius: 2px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #00ff41;
+  background: rgba(0, 255, 65, 0.05);
+  color: #00ff41;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.input-area input:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4), inset 0 0 10px rgba(0, 255, 65, 0.1);
+  border-color: #00d9ff;
+}
+
+.input-area input::placeholder {
+  color: rgba(0, 255, 65, 0.5);
+}
+
+.input-area button {
+  padding: 12px 30px;
+  border: 2px solid #ff006e;
+  background: rgba(255, 0, 110, 0.1);
+  color: #ff006e;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #ff006e;
+  box-shadow: 0 0 15px rgba(255, 0, 110, 0.3);
+  letter-spacing: 1px;
+  min-width: 100px;
+}
+
+.input-area button:hover {
+  background: rgba(255, 0, 110, 0.2);
+  box-shadow: 0 0 25px rgba(255, 0, 110, 0.5), inset 0 0 10px rgba(255, 0, 110, 0.2);
+  transform: scale(1.05);
+}
+
+.input-area button:active {
+  transform: scale(0.95);
+}
+
+/* Glitch effect on hover */
+@keyframes glitch {
+  0% {
+    text-shadow: 0 0 5px #ff006e;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff006e, 0 0 20px #00d9ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff006e;
+  }
+}
+
+.input-area button:hover {
+  animation: glitch 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chat-box {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .message {
+    font-size: 12px;
+  }
+
+  .input-area button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

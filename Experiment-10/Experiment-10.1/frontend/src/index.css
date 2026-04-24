@@ -1,0 +1,147 @@
+:root {
+  --primary: #00ff41;
+  --secondary: #ff006e;
+  --tertiary: #00d9ff;
+  --bg: #0a0e27;
+  --bg-secondary: #1a1f3a;
+  --text: #00ff41;
+  --text-muted: #888899;
+  --border: #00ff41;
+  --shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+  --shadow-secondary: 0 0 20px rgba(255, 0, 110, 0.3);
+  --shadow-tertiary: 0 0 20px rgba(0, 217, 255, 0.3);
+
+  --sans: 'Courier New', monospace;
+  --heading: 'Courier New', monospace;
+  --mono: 'Courier New', monospace;
+
+  font: 16px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  position: relative;
+}
+
+#root::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 255, 65, 0.03) 0px,
+      rgba(0, 255, 65, 0.03) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  pointer-events: none;
+  z-index: 1;
+  animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+h1, h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text);
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+input, button {
+  font-family: var(--mono);
+  background: var(--bg-secondary);
+  color: var(--text);
+  border: 2px solid var(--primary);
+  padding: 10px 15px;
+  border-radius: 0;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px var(--primary);
+  box-shadow: var(--shadow);
+}
+
+input::placeholder {
+  color: var(--text-muted);
+}
+
+input:focus, button:focus {
+  outline: none;
+  box-shadow: var(--shadow), inset 0 0 10px rgba(0, 255, 65, 0.2);
+  border-color: var(--tertiary);
+}
+
+button {
+  cursor: pointer;
+  border-color: var(--secondary);
+  box-shadow: var(--shadow-secondary);
+  text-shadow: 0 0 5px var(--secondary);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255, 0, 110, 0.1);
+  box-shadow: var(--shadow-secondary), inset 0 0 10px rgba(255, 0, 110, 0.2);
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
